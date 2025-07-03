@@ -14,7 +14,6 @@ public class KuisPenjumlahan extends JFrame {
         setSize(400, 200);
         setLayout(new BorderLayout());
 
-        // Panel utama
         JPanel panelUtama = new JPanel(new GridLayout(3, 1));
 
         JPanel panelSoal = new JPanel(new FlowLayout());

@@ -13,7 +13,6 @@ public class TicTacToeSederhana extends JFrame {
 
         Font fontBesar = new Font("Arial", Font.BOLD, 40);
 
-        // Inisialisasi tombol-tombol
         for (int baris = 0; baris < 3; baris++) {
             for (int kolom = 0; kolom < 3; kolom++) {
                 JButton btn = new JButton("");
@@ -22,11 +21,11 @@ public class TicTacToeSederhana extends JFrame {
 
                 btn.addActionListener(e -> {
                     JButton sumber = (JButton) e.getSource();
-                    if (!sumber.getText().isEmpty()) return; // Sudah diklik
+                    if (!sumber.getText().isEmpty()) return;
 
                     sumber.setText(giliranX ? "X" : "O");
-                    giliranX = !giliranX; // Ganti giliran
-                    sumber.setEnabled(false); // Setelah diklik, disable
+                    giliranX = !giliranX;
+                    sumber.setEnabled(false);
                 });
 
                 add(btn);
